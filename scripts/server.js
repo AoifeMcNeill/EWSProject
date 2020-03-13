@@ -33,7 +33,7 @@ MongoClient.connect(uri, function(err, db) {
 var port = PORT;
 
 //send our index.html file to the user for the home page
-app.get("/pages/index", function(req, res) {
+app.get("/", function(req, res) {
     res.sendFile(__dirname + "pages/index.html");
 });
 
