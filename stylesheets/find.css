@@ -1,3 +1,14 @@
 #findForm {
     margin-top: 60px;
 }
+
+#btnSubmit {
+    background-color: #E3FFF5;
+    color: #000;
+    border-style: 1px solid #E3FFF5;
+}
+
+#btnSubmit:hover {
+    background-color: #B0FFE3;
+    border-color: #B0FFE3;
+}
