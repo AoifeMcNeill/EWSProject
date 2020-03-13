@@ -8,8 +8,10 @@ var port = PORT;
 
 //send our index.html file to the user for the home page
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "pages/index.html");
 });
+
+
 
 //Start the server
 app.listen(PORT);
