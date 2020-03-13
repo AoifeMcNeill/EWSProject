@@ -12,7 +12,7 @@
         "url": "git+https://github.com/AoifeMcNeill/EWSProject.git"
     },
     "dependencies": {
-        "express": "~4.13.4"
+        "express": "^4.13.4"
     },
     "author": "Aoife McNeill",
     "license": "ISC"
