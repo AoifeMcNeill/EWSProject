@@ -12,7 +12,8 @@
         "url": "git+https://github.com/AoifeMcNeill/EWSProject.git"
     },
     "dependencies": {
-        "express": "^4.13.4"
+        "express": "^4.13.4",
+        "mongodb": "^3.5.5"
     },
     "author": "Aoife McNeill",
     "license": "ISC"

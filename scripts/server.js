@@ -3,6 +3,24 @@ var express = require('express');
 var app = express();
 const PORT = process.env.PORT || 8080;
 
+//mongodb set up
+const MongoClient = require("mongodb").MongoClient;
+const url = ""; //add uri later
+const client = new MongoClient(uri, { useNewUrlParser: true });
+
+//mongodb test
+var output = "processing the login form... ";
+var input1 = req.query.input1;
+var input2 = req.query.input2;
+console.log("The params: " + req.query.input1 + " " + req.query.input2);
+
+//connect to mongodb
+MongoClient.connect(uri, function(err, db) {
+    if (err) throw err;
+    //Write databse Insert/Update/Query code here..
+    console.log("End the database stuff");
+})
+
 //Set the port based on environment
 var port = PORT;
 
