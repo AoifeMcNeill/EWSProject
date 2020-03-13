@@ -18,6 +18,14 @@ console.log("The params: " + req.query.input1 + " " + req.query.input2);
 MongoClient.connect(uri, function(err, db) {
     if (err) throw err;
     //Write databse Insert/Update/Query code here..
+    console.log("Start the database stuff");
+    var dbo = db.db("mydb");
+    var myobj = { firstInput: "user1", secondInput: "user1again" };
+    dbo.collector("users").insertOne(myobj, function(err, res) {
+        if (err) throw err;
+        console.log("1 user inserted");
+        db.close();
+    });
     console.log("End the database stuff");
 })
 
